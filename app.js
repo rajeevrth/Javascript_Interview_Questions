@@ -20,21 +20,19 @@ console.log(a);
 console.log(b);
 Palindrome(a, b);
 
-var str="Rajeev";
-var reversedString='';
-var index=str.length-1;
-function Reverse(str,index)
-{
-    if(index<0)
-    {
+//3. Reverse using Recursion
+var str = "Rajeev";
+var reversedString = '';
+var index = str.length - 1;
+function Reverse(str, index) {
+    if (index < 0) {
         console.log(reversedString);
     }
-    else
-    {
-        reversedString=reversedString+str[index];
-        Reverse(str,index-1);
+    else {
+        reversedString = reversedString + str[index];
+        Reverse(str, index - 1);
     }
 }
-Reverse(str,index);
+Reverse(str, index);
 
 
